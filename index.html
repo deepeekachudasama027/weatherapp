@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div class="container">
+      <div class="app">
+        <header>
+          <input
+            type="text"
+            autocomplete="off"
+            class="search"
+            placeholder="Search for a city....."
+          />
+        </header>
+        <main>
+          <div class="weather-icon">
+            <img src="icons/unknown.png" alt="" />
+          </div>
+          <div class="location">
+            <div class="city">Location</div>
+            <div class="date">Date</div>
+          </div>
+          <div class="current">
+            <div class="temp">Temperature <span></span></div>
+            <div class="weather">Weather</div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="app.js"></script>
+   
+  </body>
+</html>
